@@ -1,0 +1,46 @@
+body{
+    background-color: cadetblue
+}
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+.container{
+display: flex;
+width: 90vw;
+}
+.panel{
+background-size: auto 100%;
+height: 90vh;
+cursor: pointer;
+margin: 10px;
+border-radius: 40px;
+transition: 1s ease-in-out; 
+flex: .5;
+background-position: center;
+background-size: cover;
+}
+.panel h3 {
+font-size: .8rem;
+color: rgb(135, 216, 222);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+opacity: 0;
+}
+.panel.active {
+flex: 5;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 5px;
+}
+@media (max-width: 480px) {
+.container {
+width: 100vw;
+}
+.panel{
+width: 10px;
+
+}
+}
